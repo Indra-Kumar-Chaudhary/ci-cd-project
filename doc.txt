@@ -1,0 +1,34 @@
+Syntax: 
+name [optional]
+
+on [required]
+    .. name of GitHub event that triggers the workflows 
+
+jobs [required] 
+
+- one or more jobs <jobs.<job_id>>
+- sequence of tasks (steps)
+
+## Creating python env 
+python3 -m venv myvenv
+
+# active env 
+source myvenv/bin/activate
+
+# install flask and pytest
+pip install flask pytest
+
+# setting a projects creating requrements files
+pip freeze > requirements.txt
+
+# create source repo 
+mkdir src 
+
+# create test for for unit test 
+
+ run pytest 
+
+ ## giving source path for python 
+ export PYTHONPATH=src 
+
+ # now run pytest 
